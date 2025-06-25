@@ -1,0 +1,46 @@
+.certifications-container {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+    text-align: left;
+}
+
+.certifications-container .certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.certifications-container .certifications-grid .certification {
+    background: rgba(80, 0, 202, 0.08);
+    border-radius: 8px;
+    padding: 24px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    text-align: left;
+    transition: box-shadow 0.2s;
+}
+
+.certification h2 {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 1.3em;
+}
+
+.certification p {
+    margin: 0;
+    color: #aaa;
+    font-size: 1em;
+}
+
+@media screen and (max-width: 700px) {
+    .certifications-container {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .certifications-container .certifications-grid {
+        display: block;
+    }
+    .certifications-container .certifications-grid .certification {
+        margin-bottom: 24px;
+    }
+} 
