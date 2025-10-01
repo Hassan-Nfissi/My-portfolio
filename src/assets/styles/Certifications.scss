@@ -5,31 +5,125 @@
     text-align: left;
 }
 
+.certifications-container h1 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #2c3e50;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+}
+
+.certifications-container h1::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3498db, #2980b9);
+    border-radius: 2px;
+}
+
 .certifications-container .certifications-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    justify-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .certifications-container .certifications-grid .certification {
-    background: rgba(80, 0, 202, 0.08);
-    border-radius: 8px;
-    padding: 24px 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-    text-align: left;
-    transition: box-shadow 0.2s;
+    background: linear-gradient(145deg, #f8f9fa, #e9ecef);
+    border-radius: 16px;
+    padding: 25px 20px;
+    box-shadow: 
+        0 8px 25px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8);
+    text-align: center;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: none;
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.certifications-container .certifications-grid .certification::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    transition: left 0.5s;
+}
+
+.certifications-container .certifications-grid .certification:hover::before {
+    left: 100%;
+}
+
+.certifications-container .certifications-grid .certification:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    background: linear-gradient(145deg, #ffffff, #f8f9fa);
 }
 
 .certification h2 {
     margin-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     font-size: 1.3em;
+    color: #2c3e50;
+    font-weight: 700;
+    line-height: 1.3;
 }
 
 .certification p {
-    margin: 0;
-    color: #aaa;
-    font-size: 1em;
+    margin: 8px 0;
+    color: #5a6c7d;
+    font-size: 0.95em;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.certification-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 18px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 12px;
+    box-shadow: 
+        0 6px 20px rgba(0, 0, 0, 0.08),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.certification-logo:hover {
+    transform: scale(1.08) rotate(2deg);
+    box-shadow: 
+        0 12px 35px rgba(0, 0, 0, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.95);
+}
+
+.certification-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.certification-link:hover {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 700px) {
@@ -37,10 +131,41 @@
         padding-left: 5%;
         padding-right: 5%;
     }
-    .certifications-container .certifications-grid {
-        display: block;
+    
+    .certifications-container h1 {
+        font-size: 2em;
+        margin-bottom: 30px;
     }
+    
+    .certifications-container h1::after {
+        width: 50px;
+        height: 2px;
+    }
+    
+    .certifications-container .certifications-grid {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+    
     .certifications-container .certifications-grid .certification {
-        margin-bottom: 24px;
+        margin-bottom: 15px;
+        padding: 20px 18px;
+        max-width: 100%;
+        border-radius: 14px;
+    }
+    
+    .certification-logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 15px;
+        padding: 10px;
+    }
+    
+    .certification h2 {
+        font-size: 1.2em;
+    }
+    
+    .certification p {
+        font-size: 0.9em;
     }
 } 

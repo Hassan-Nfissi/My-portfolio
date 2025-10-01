@@ -1,14 +1,4 @@
 import React from "react";
-import mock01 from '../assets/images/mock01.png';
-import mock02 from '../assets/images/mock02.png';
-import mock03 from '../assets/images/mock03.png';
-import mock04 from '../assets/images/mock04.png';
-import mock05 from '../assets/images/mock05.png';
-import mock06 from '../assets/images/mock06.png';
-import mock07 from '../assets/images/mock07.png';
-import mock08 from '../assets/images/mock08.png';
-import mock09 from '../assets/images/mock09.png';
-import mock10 from '../assets/images/mock10.png';
 import '../assets/styles/Project.scss';
 
 function Project() {
@@ -45,6 +35,11 @@ function Project() {
                 <a href="https://github.com/Hassan-Nfissi/Locatour" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/loc.png'} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/Hassan-Nfissi/Locatour" target="_blank" rel="noreferrer"><h2>Locatuer</h2></a>
                 <p>Locatour is an intelligent mobile travel planning app. It helps users discover places, simulate a budget, and organize their trips using AI (Ollama) and the Google Places API.</p>
+            </div>
+            <div className="project">
+                <a href="https://github.com/Hassan-Nfissi/terraform-ansible-3tier" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/3tier.png'} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Hassan-Nfissi/terraform-ansible-3tier" target="_blank" rel="noreferrer"><h2>Azure 3‑Tier Deployment: Terraform + Ansible + Spring Boot</h2></a>
+                <p>End‑to‑end deployment of a secure 3‑tier app on Microsoft Azure. Terraform provisions VNets, subnets, NSGs and VMs; Ansible configures Nginx (web), Spring Boot (app) and MySQL (data). Includes architecture diagram, screenshots, and step‑by‑step deploy using Terraform and Ansible.</p>
             </div>
         </div>
     </div>
