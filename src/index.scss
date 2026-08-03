@@ -1,58 +1,91 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 1.1rem !important;
+  font-size: 1.05rem !important;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace !important;
-  font-size: 1rem !important;
+  font-family: 'JetBrains Mono', source-code-pro, Menlo, Monaco, Consolas, monospace !important;
+  font-size: 0.95rem !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1116;
+}
+::-webkit-scrollbar-thumb {
+  background: #2a2d3e;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5000ca;
 }
 
 .main-container {
   position: relative;
   background-color: #0d1116;
-
 }
 
 a {
   text-decoration: none;
+  transition: all 0.2s ease;
 }
 
 a:hover {
-  color: #5000ca;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  color: #8e54e9;
 }
 
 p, a, h1, h2, h3, h4, h5, label, button {
-  color: white;
-  font-family: "Lato", sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
+/* Glassmorphic Navigation Bar */
 .navigation-bar {
   justify-content: space-between;
-  background-color: #0d1116;
+  background: rgba(13, 17, 22, 0.8) !important;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 
   button {
-    font-size: 1.1rem;
-    font-family: "Lato", sans-serif;
+    font-size: 1.05rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
     text-transform: initial;
-    padding: 6px 10px;
+    padding: 6px 16px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  button:hover {
+    background: rgba(142, 84, 233, 0.15);
+    color: #a777ff !important;
   }
 
   svg {
     cursor: pointer;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  svg:hover {
+    transform: scale(1.15) rotate(15deg);
+    color: #a777ff;
   }
 }
 
 .navigation-bar-responsive {
   span, p {
     color: #0d1116;
-    font-family: "Lato", sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 }
 
@@ -90,22 +123,46 @@ p, a, h1, h2, h3, h4, h5, label, button {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  h1 {
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 30px;
+    background: linear-gradient(135deg, #ffffff 0%, #c4b5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .light-mode {
   background-color: #f8f9fa;
 
   .navigation-bar {
-    background-color: #f8f9fa;
+    background: rgba(248, 249, 250, 0.85) !important;
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+    button {
+      color: #0d1116 !important;
+    }
+    button:hover {
+      background: rgba(80, 0, 202, 0.1);
+      color: #5000ca !important;
+    }
   }
 
   p, a, h1, h2, h3, h4, h5, label, button {
     color: #0d1116;
   }
 
+  h1 {
+    background: linear-gradient(135deg, #0d1116 0%, #5000ca 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   a:hover {
     color: #5000ca;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
   }
 
   .navigation-bar svg {
@@ -117,28 +174,31 @@ p, a, h1, h2, h3, h4, h5, label, button {
   }
 
   .skills-container svg {
-    color: #0d1116;
+    color: #5000ca;
   }
 
   .chip {
-    background-color: rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    background-color: rgba(80, 0, 202, 0.08) !important;
+    color: #5000ca !important;
+    border: 1px solid rgba(80, 0, 202, 0.2) !important;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+
+    span {
+      color: #5000ca !important;
+    }
   }
 
   .vertical-timeline::before {
-    background-color: rgba(0, 0, 0, 0.08);
+    background-color: rgba(0, 0, 0, 0.12);
   }
 
   .vertical-timeline--animate .vertical-timeline-element-content.bounce-in {
-    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    border: 1px solid rgba(0, 0, 0, 0.08);
   }
 
   .vertical-timeline--two-columns .vertical-timeline-element-content .vertical-timeline-element-date {
-    color: gray;
-  }
-
-  .vertical-timeline-element-content-arrow {
-    border-right: 7px solid rgba(0, 0, 0, 0.08) !important;
+    color: #666;
   }
 
   .flex-chips .chip-title {

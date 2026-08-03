@@ -12,6 +12,8 @@ const labelsFirst = [
     "React",
     "TypeScript",
     "JavaScript",
+    "Keycloak",
+    "Vault",
     "HTML5",
     "CSS3",
     "Machine Learning",
@@ -25,6 +27,9 @@ const labelsSecond = [
     "Jenkins",
     "Terraform",
     "Ansible",
+    "Grafana",
+    "Keycloak",
+    "Vault",
     "Git",
     "CI/CD",
     "Linux",
@@ -54,7 +59,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faJava} size="3x"/>
                     <h3>Software Engineering</h3>
-                    <p>Experienced in building robust, scalable applications using Spring Boot, Python (FastAPI), and React. Skilled at integrating machine learning models and LLMs into production systems, delivering end-to-end solutions from backend to frontend.</p>
+                    <p>Experienced in building robust, scalable applications using Spring Boot, Python (FastAPI), and React. Skilled at integrating security solutions (Keycloak, Vault), machine learning models, and LLMs into production systems, delivering end-to-end solutions from backend to frontend.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsFirst.map((label, index) => (
@@ -66,7 +71,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>DevOps & Automation</h3>
-                    <p>Solid expertise in DevOps practices, including containerization, orchestration, CI/CD pipelines, infrastructure as code, and automation using tools like Kubernetes, Docker, Jenkins, Terraform, Ansible, and Git.</p>
+                    <p>Solid expertise in DevOps practices, including containerization, orchestration, CI/CD pipelines, infrastructure as code, and observability using tools like Kubernetes, Docker, Jenkins, Terraform, Ansible, Grafana, Keycloak, Vault, and Git.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tech stack:</span>
                         {labelsSecond.map((label, index) => (

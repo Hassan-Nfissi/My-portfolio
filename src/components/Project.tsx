@@ -7,6 +7,11 @@ function Project() {
         <h1>Personal Projects</h1>
         <div className="projects-grid">
             <div className="project">
+                <a href="https://github.com/Hassan-Nfissi/TermAI" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/TermAI.png'} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Hassan-Nfissi/TermAI" target="_blank" rel="noreferrer"><h2>TermAI — Minimal Floating AI Desktop Assistant</h2></a>
+                <p>A minimal floating desktop assistant built with Go (Wails v2) and React that turns natural language into CLI commands. Features 3 ready-to-run command suggestions per query, one-click copy to clipboard, dark/light themes, and support for Groq, OpenAI, and Anthropic providers.</p>
+            </div>
+            <div className="project">
                 <a href="https://github.com/Hassan-Nfissi/SynergyGym-DevSecOps" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/ci-cd.png'} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/Hassan-Nfissi/SynergyGym-DevSecOps" target="_blank" rel="noreferrer"><h2>Jenkins CI/CD Pipeline for React Dashboard</h2></a>
                 <p>Sets up a CI/CD pipeline for a React dashboard using Jenkins. It includes stages for cleaning the workspace, cloning the repository, installing dependencies, performing a code quality check with SonarQube, running a dependency check, building a Docker image, logging into Docker Hub, running the image, and pushing it to Docker Hub.</p>

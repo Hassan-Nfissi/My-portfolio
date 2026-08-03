@@ -16,6 +16,26 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
+            date="02/2026 – 07/2026"
+            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            icon={<FontAwesomeIcon icon={faBriefcase} />}
+          >
+            <h3 className="vertical-timeline-element-title">Full Stack Java / React Developer (PFE Internship)</h3>
+            <h4 className="vertical-timeline-element-subtitle">Adria Business & Technology – Casablanca</h4>
+            <p><strong>Technologies:</strong> Java 21, Spring Boot, React, PostgreSQL, Jenkins, Grafana, Docker Compose, Keycloak, Vault, Maven, Git</p>
+            <ul>
+              <li>Conceived and developed a Full Stack platform (ADT Config Platform) for managing, supervising, and monitoring electronic signature and digital trust services.</li>
+              <li>Designed and developed secure REST APIs with Spring Boot for microservices administration and orchestration.</li>
+              <li>Developed the user interface with React and integrated backend services.</li>
+              <li>Integrated PostgreSQL, Spring Security, Keycloak, and Vault for secure access control and configuration management.</li>
+              <li>Implemented CI/CD pipelines using Jenkins and containerized the application with Docker Compose.</li>
+              <li>Centralized logging and monitored services using Grafana, Loki, and Grafana Alloy.</li>
+            </ul>
+          </VerticalTimelineElement>
+          <VerticalTimelineElement
+            className="vertical-timeline-element--work"
+            contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
+            contentArrowStyle={{ borderRight: '7px solid  white' }}
             date="2024 – 2025"
             iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
