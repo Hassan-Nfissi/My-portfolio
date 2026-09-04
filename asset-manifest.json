@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/My-portfolio/static/css/main.7fd6d385.css",
-    "main.js": "/My-portfolio/static/js/main.2fb47b74.js",
+    "main.js": "/My-portfolio/static/js/main.edb238e4.js",
     "static/js/453.404a48a8.chunk.js": "/My-portfolio/static/js/453.404a48a8.chunk.js",
     "static/media/bg-light.png": "/My-portfolio/static/media/bg-light.bac0efb485244a522981.png",
     "static/media/bg-dark.png": "/My-portfolio/static/media/bg-dark.f420c6b8458af72de935.png",
@@ -10,11 +10,11 @@
     "static/media/azure-fundamentals.png": "/My-portfolio/static/media/azure-fundamentals.c4a341087faaf9495f45.png",
     "index.html": "/My-portfolio/index.html",
     "main.7fd6d385.css.map": "/My-portfolio/static/css/main.7fd6d385.css.map",
-    "main.2fb47b74.js.map": "/My-portfolio/static/js/main.2fb47b74.js.map",
+    "main.edb238e4.js.map": "/My-portfolio/static/js/main.edb238e4.js.map",
     "453.404a48a8.chunk.js.map": "/My-portfolio/static/js/453.404a48a8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7fd6d385.css",
-    "static/js/main.2fb47b74.js"
+    "static/js/main.edb238e4.js"
   ]
 }
