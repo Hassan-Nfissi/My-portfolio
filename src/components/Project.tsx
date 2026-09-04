@@ -13,7 +13,7 @@ function Project() {
                 <p><strong>Tech Stack:</strong> React, TypeScript, Go (Wails v2), Vite, Groq / OpenAI / Anthropic APIs</p>
             </div>
             <div className="project">
-                <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/player.png'} className="zoom" alt="thumbnail" width="100%"/></a>
+                <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/spark-attrition.png'} className="zoom" alt="thumbnail" width="100%"/></a>
                 <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><h2>Employee Attrition & Performance Prediction with Spark</h2></a>
                 <p>An end-to-end Big Data & Machine Learning system built with Apache Spark to predict employee turnover risk in both offline batch mode and real-time streaming mode using PySpark MLlib and Spark Structured Streaming over TCP Sockets.</p>
                 <p><strong>Tech Stack:</strong> PySpark MLlib, Spark Structured Streaming, Python, Logistic Regression, TCP Sockets</p>
