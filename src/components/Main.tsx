@@ -22,7 +22,7 @@ function Main() {
           <p className="subtitle-role">Product Mindset · From Code to Production with DevOps Best Practices</p>
           <div className="location-badge">
             <LocationOnIcon fontSize="small" />
-            <span>Fès, Morocco · Open for Freelance & Mission Projects</span>
+            <span>Fès, Morocco · Open for Mission Projects</span>
           </div>
 
           <div className="mobile_social_icons">
