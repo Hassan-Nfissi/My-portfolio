@@ -25,12 +25,12 @@ function Project() {
             </div>
 
             <div className="project">
-                <a href="http://51.20.78.4" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/booklypro.png'} className="zoom" alt="BooklyPro SaaS Platform" width="100%"/></a>
-                <a href="http://51.20.78.4" target="_blank" rel="noreferrer"><h2>BooklyPro 🇲🇦 — Online Booking SaaS Platform</h2></a>
+                <a href="https://booklypro-app.duckdns.org/" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/booklypro.png'} className="zoom" alt="BooklyPro SaaS Platform" width="100%"/></a>
+                <a href="https://booklypro-app.duckdns.org/" target="_blank" rel="noreferrer"><h2>BooklyPro 🇲🇦 — Online Booking SaaS Platform</h2></a>
                 <p>A modern online appointment booking platform tailored for service professionals in Morocco (salons, barbershops, spas). Built with high-concurrency availability engine (zero double-booking via transaction locking), Google OAuth Token Exchange, multilingual interface (FR, AR, EN), and MAD currency support.</p>
                 <p><strong>Tech Stack:</strong> Spring Boot 3.3.5, Java 17 LTS, React 18, TypeScript, Tailwind CSS, PostgreSQL, Flyway, Docker Compose, Nginx SSL</p>
                 <div className="project-links">
-                    <a href="http://51.20.78.4" target="_blank" rel="noreferrer" className="live-demo-btn">
+                    <a href="https://booklypro-app.duckdns.org/" target="_blank" rel="noreferrer" className="live-demo-btn">
                         🟢 Accéder à la plateforme en direct
                     </a>
                     <a href="https://github.com/Hassan-Nfissi/BooklyPro" target="_blank" rel="noreferrer" className="repo-btn">
