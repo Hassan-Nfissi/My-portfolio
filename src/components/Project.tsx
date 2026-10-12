@@ -49,6 +49,18 @@ function Project() {
             </div>
 
             <div className="project">
+                <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/smartbite-design.png'} className="zoom" alt="SmartBite Figma UI/UX Design" width="100%"/></a>
+                <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer"><h2>SmartBite — Mobile UI/UX Design & Prototype</h2></a>
+                <p>Complete mobile UI/UX design and interactive prototype for SmartBite, an intelligent nutrition and meal tracking mobile app. Features complete user journey architecture: multi-variant onboarding & authentication flows, calorie & macronutrient progress tracking, and daily dietary suggestion cards.</p>
+                <p><strong>Tech Stack:</strong> Figma, UI/UX Design, Mobile App Prototyping, Wireframing, User Flow, Design Systems</p>
+                <div className="project-links">
+                    <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer" className="figma-btn">
+                        🎨 Explorer le Design sur Figma
+                    </a>
+                </div>
+            </div>
+
+            <div className="project">
                 <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/spark-attrition.png'} className="zoom" alt="Spark Attrition Prediction" width="100%"/></a>
                 <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><h2>Employee Attrition & Performance Prediction with Spark</h2></a>
                 <p>An end-to-end Big Data & Machine Learning system built with Apache Spark to predict employee turnover risk in both offline batch mode and real-time streaming mode using PySpark MLlib and Spark Structured Streaming over TCP Sockets.</p>
