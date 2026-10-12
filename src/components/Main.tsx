@@ -1,6 +1,7 @@
 import React from "react";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 import '../assets/styles/Main.scss';
 
 function Main() {
@@ -17,7 +18,12 @@ function Main() {
             <a href="https://www.linkedin.com/in/hassan-nfissi-9b784428b" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
           </div>
           <h1>Hassan Nfissi</h1>
-          <p>Software Engineering and DevOps</p>
+          <p className="title-role">Full Stack & Mobile Developer</p>
+          <p className="subtitle-role">Product Mindset · From Code to Production with DevOps Best Practices</p>
+          <div className="location-badge">
+            <LocationOnIcon fontSize="small" />
+            <span>Fès, Morocco · Open for Freelance & Mission Projects</span>
+          </div>
 
           <div className="mobile_social_icons">
             <a href="https://github.com/Hassan-Nfissi" target="_blank" rel="noreferrer"><GitHubIcon/></a>
