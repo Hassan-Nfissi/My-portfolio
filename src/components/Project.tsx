@@ -6,6 +6,9 @@ function Project() {
     <div className="projects-container" id="projects">
         <h1>Personal Projects</h1>
         <div className="projects-grid">
+            {/* ========================================================= */}
+            {/* 1. WEB, MOBILE & UI/UX DESIGN PROJECTS                   */}
+            {/* ========================================================= */}
             <div className="project">
                 <a href="https://pulsewatch-app.duckdns.org" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/pulsewatch.png'} className="zoom" alt="PulseWatch Telemetry Platform" width="100%"/></a>
                 <a href="https://pulsewatch-app.duckdns.org" target="_blank" rel="noreferrer"><h2>PulseWatch ⚡ — Real-Time Uptime Monitoring SaaS</h2></a>
@@ -49,30 +52,6 @@ function Project() {
             </div>
 
             <div className="project">
-                <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/smartbite-design.png'} className="zoom" alt="SmartBite Figma UI/UX Design" width="100%"/></a>
-                <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer"><h2>SmartBite — Mobile UI/UX Design & Prototype</h2></a>
-                <p>Complete mobile UI/UX design and interactive prototype for SmartBite, an intelligent nutrition and meal tracking mobile app. Features complete user journey architecture: multi-variant onboarding & authentication flows, calorie & macronutrient progress tracking, and daily dietary suggestion cards.</p>
-                <p><strong>Tech Stack:</strong> Figma, UI/UX Design, Mobile App Prototyping, Wireframing, User Flow, Design Systems</p>
-                <div className="project-links">
-                    <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer" className="figma-btn">
-                        🎨 Explorer le Design sur Figma
-                    </a>
-                </div>
-            </div>
-
-            <div className="project">
-                <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/spark-attrition.png'} className="zoom" alt="Spark Attrition Prediction" width="100%"/></a>
-                <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><h2>Employee Attrition & Performance Prediction with Spark</h2></a>
-                <p>An end-to-end Big Data & Machine Learning system built with Apache Spark to predict employee turnover risk in both offline batch mode and real-time streaming mode using PySpark MLlib and Spark Structured Streaming over TCP Sockets.</p>
-                <p><strong>Tech Stack:</strong> PySpark MLlib, Spark Structured Streaming, Python, Logistic Regression, TCP Sockets</p>
-                <div className="project-links">
-                    <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer" className="repo-btn">
-                        Code Source (GitHub)
-                    </a>
-                </div>
-            </div>
-
-            <div className="project">
                 <a href="https://github.com/Hassan-Nfissi/Locatour" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/loc.png'} className="zoom" alt="Locatour" width="100%"/></a>
                 <a href="https://github.com/Hassan-Nfissi/Locatour" target="_blank" rel="noreferrer"><h2>Locatour — Intelligent AI Travel Planner</h2></a>
                 <p>Locatour is an intelligent mobile travel planning app that helps users discover places, simulate travel budgets, and organize customized itineraries using AI LLMs (Ollama) and the Google Places API.</p>
@@ -80,6 +59,18 @@ function Project() {
                 <div className="project-links">
                     <a href="https://github.com/Hassan-Nfissi/Locatour" target="_blank" rel="noreferrer" className="repo-btn">
                         Code Source (GitHub)
+                    </a>
+                </div>
+            </div>
+
+            <div className="project">
+                <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/smartbite-design.png'} className="zoom" alt="SmartBite Figma UI/UX Design" width="100%"/></a>
+                <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer"><h2>SmartBite — Mobile UI/UX Design & Prototype</h2></a>
+                <p>Complete mobile UI/UX design and interactive prototype for SmartBite, an intelligent nutrition and meal tracking mobile app. Features complete user journey architecture: multi-variant onboarding & authentication flows, calorie & macronutrient progress tracking, and daily dietary suggestion cards.</p>
+                <p><strong>Tech Stack:</strong> Figma, UI/UX Design, Mobile App Prototyping, Wireframing, User Flow, Design Systems</p>
+                <div className="project-links">
+                    <a href="https://www.figma.com/design/9fsK2RrOcyQFrpdLBVP32a/Hassan_Nfissi?node-id=0-1&t=Xi9EYnpdQDtPkiob-1" target="_blank" rel="noreferrer" className="figma-btn">
+                        🎨 Explorer le Design sur Figma
                     </a>
                 </div>
             </div>
@@ -96,30 +87,9 @@ function Project() {
                 </div>
             </div>
 
-            <div className="project">
-                <a href="https://github.com/Hassan-Nfissi/Facial-Recognition-and-Absence-Management" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/reco.jpeg'} className="zoom" alt="Facial Recognition Attendance" width="100%"/></a>
-                <a href="https://github.com/Hassan-Nfissi/Facial-Recognition-and-Absence-Management" target="_blank" rel="noreferrer"><h2>Facial Recognition & Attendance Management System</h2></a>
-                <p>A full-stack web application leveraging computer vision and machine learning for automated employee attendance tracking. Supports employee registration, model training, and real-time facial detection via video streams.</p>
-                <p><strong>Tech Stack:</strong> Python, Flask, OpenCV, Scikit-Learn, JavaScript, HTML5/CSS3, SQLite</p>
-                <div className="project-links">
-                    <a href="https://github.com/Hassan-Nfissi/Facial-Recognition-and-Absence-Management" target="_blank" rel="noreferrer" className="repo-btn">
-                        Code Source (GitHub)
-                    </a>
-                </div>
-            </div>
-
-            <div className="project">
-                <a href="https://github.com/Hassan-Nfissi/Player-Rank-Prediction" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/player.png'} className="zoom" alt="Player Rank Prediction" width="100%"/></a>
-                <a href="https://github.com/Hassan-Nfissi/Player-Rank-Prediction" target="_blank" rel="noreferrer"><h2>Premier League Player Rank Prediction</h2></a>
-                <p>A machine learning project built with Scikit-learn to predict Premier League player ranks based on detailed match performance metrics (goals, assists, key passes, appearance statistics).</p>
-                <p><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, NumPy, Data Analysis</p>
-                <div className="project-links">
-                    <a href="https://github.com/Hassan-Nfissi/Player-Rank-Prediction" target="_blank" rel="noreferrer" className="repo-btn">
-                        Code Source (GitHub)
-                    </a>
-                </div>
-            </div>
-
+            {/* ========================================================= */}
+            {/* 2. DEVOPS & CLOUD ARCHITECTURE PROJECTS                  */}
+            {/* ========================================================= */}
             <div className="project">
                 <a href="https://github.com/Hassan-Nfissi/SynergyGym-DevSecOps" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/ci-cd.png'} className="zoom" alt="Jenkins Pipeline" width="100%"/></a>
                 <a href="https://github.com/Hassan-Nfissi/SynergyGym-DevSecOps" target="_blank" rel="noreferrer"><h2>Jenkins CI/CD Pipeline for React Dashboard</h2></a>
@@ -151,6 +121,45 @@ function Project() {
                 <p><strong>Tech Stack:</strong> Terraform, AWS (S3, CloudFront, Route53, ACM)</p>
                 <div className="project-links">
                     <a href="https://github.com/Hassan-Nfissi/deploy-static-web-aws" target="_blank" rel="noreferrer" className="repo-btn">
+                        Code Source (GitHub)
+                    </a>
+                </div>
+            </div>
+
+            {/* ========================================================= */}
+            {/* 3. MACHINE LEARNING & BIG DATA PROJECTS                  */}
+            {/* ========================================================= */}
+            <div className="project">
+                <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/spark-attrition.png'} className="zoom" alt="Spark Attrition Prediction" width="100%"/></a>
+                <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer"><h2>Employee Attrition & Performance Prediction with Spark</h2></a>
+                <p>An end-to-end Big Data & Machine Learning system built with Apache Spark to predict employee turnover risk in both offline batch mode and real-time streaming mode using PySpark MLlib and Spark Structured Streaming over TCP Sockets.</p>
+                <p><strong>Tech Stack:</strong> PySpark MLlib, Spark Structured Streaming, Python, Logistic Regression, TCP Sockets</p>
+                <div className="project-links">
+                    <a href="https://github.com/Hassan-Nfissi/Employee-Attrition-Performance-Prediction-with-spark" target="_blank" rel="noreferrer" className="repo-btn">
+                        Code Source (GitHub)
+                    </a>
+                </div>
+            </div>
+
+            <div className="project">
+                <a href="https://github.com/Hassan-Nfissi/Facial-Recognition-and-Absence-Management" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/reco.jpeg'} className="zoom" alt="Facial Recognition Attendance" width="100%"/></a>
+                <a href="https://github.com/Hassan-Nfissi/Facial-Recognition-and-Absence-Management" target="_blank" rel="noreferrer"><h2>Facial Recognition & Attendance Management System</h2></a>
+                <p>A full-stack web application leveraging computer vision and machine learning for automated employee attendance tracking. Supports employee registration, model training, and real-time facial detection via video streams.</p>
+                <p><strong>Tech Stack:</strong> Python, Flask, OpenCV, Scikit-Learn, JavaScript, HTML5/CSS3, SQLite</p>
+                <div className="project-links">
+                    <a href="https://github.com/Hassan-Nfissi/Facial-Recognition-and-Absence-Management" target="_blank" rel="noreferrer" className="repo-btn">
+                        Code Source (GitHub)
+                    </a>
+                </div>
+            </div>
+
+            <div className="project">
+                <a href="https://github.com/Hassan-Nfissi/Player-Rank-Prediction" target="_blank" rel="noreferrer"><img src={process.env.PUBLIC_URL + '/player.png'} className="zoom" alt="Player Rank Prediction" width="100%"/></a>
+                <a href="https://github.com/Hassan-Nfissi/Player-Rank-Prediction" target="_blank" rel="noreferrer"><h2>Premier League Player Rank Prediction</h2></a>
+                <p>A machine learning project built with Scikit-learn to predict Premier League player ranks based on detailed match performance metrics (goals, assists, key passes, appearance statistics).</p>
+                <p><strong>Tech Stack:</strong> Python, Scikit-learn, Pandas, NumPy, Data Analysis</p>
+                <div className="project-links">
+                    <a href="https://github.com/Hassan-Nfissi/Player-Rank-Prediction" target="_blank" rel="noreferrer" className="repo-btn">
                         Code Source (GitHub)
                     </a>
                 </div>
